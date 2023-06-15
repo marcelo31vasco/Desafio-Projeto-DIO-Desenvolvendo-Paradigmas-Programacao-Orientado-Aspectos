@@ -13,21 +13,27 @@ void deposito(struct Conta *conta, float valor) {
 void sacar(struct Conta *conta, float valor) {
     if (conta->saldo >= valor) {
         conta->saldo -= valor;
-        
-        printf("\n Seu saque foi realizado com sucesso!\n");
+    printf("|*******************************************************|\n");
+	printf("|                                                       |\n");  
+    printf("| Seu saque foi realizado com sucesso!                  |\n");
     
     } else {
     	
-        printf("\n Seu saldo eh insuficiente!\n");
-    }
+    printf("| Seu saldo eh insuficiente!                            |\n");
+    printf("|                                                       |\n");
+   	printf("|*******************************************************|\n");
+}
 }
 
 void exibirExtrato(struct Conta *conta, const char *tipoConta) {
-    printf("\n Extrato detalhado de sua da Conta %s: %.2f\n", tipoConta, conta->saldo);
-    if (conta->saldo > 0) {
-        printf("\n Saldo Positivo \n");
-    } else {
-        printf("\n Sem saldo disponivel \n");
+	
+	printf("|*******************************************************|\n");
+	printf("|                                                       |\n");    
+    printf("| Extrato detalhado de sua da Conta %s: %.2f            |\n", tipoConta, conta->saldo); if (conta->saldo > 0) {
+    printf("| Saldo Positivo                                        |\n");} else {
+    printf("| Sem saldo disponivel                                  |\n");
+    printf("|                                                       |\n");
+    printf("|*******************************************************|\n");
     }
 }
 
@@ -49,13 +55,18 @@ int main() {
     int opcaoConta;
 
 	do {
-	
-	printf("\n Escolha qual a conta desejar realizar o saque:\n");
-    printf("1 - Conta Corrente\n");
-    printf("2 - Conta Poupanca\n");
-    printf("3 - Conta Salario\n");
-    printf("4 - Sair da sua conta \n");
+	printf("|*******************************************************|\n");
+	printf("|                                                       |\n");
+	printf("|  Escolha qual a conta desejar realizar o saque:       |\n");
+    printf("| 1 - Conta Corrente                                    |\n");
+    printf("| 2 - Conta Poupanca                                    |\n");
+    printf("| 3 - Conta Salario                                     |\n");
+    printf("| 4 - Sair da sua conta                                 |\n");
+    printf("|                                                       |\n");
+    printf("|*******************************************************|\n");
+    
     scanf("%d", &opcaoConta);
+  
 
     if (opcaoConta == 4) {
         break;
@@ -77,7 +88,7 @@ int main() {
             sacar(&salario, valorSaque);
             break;
         default:
-            printf("\n Operacao invalida \n");
+            printf(" Operacao invalida \n");
     }
 
     exibirExtrato(&corrente, "Corrente");
