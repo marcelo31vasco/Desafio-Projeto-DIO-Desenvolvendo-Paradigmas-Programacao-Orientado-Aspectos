@@ -16,9 +16,7 @@ void sacar(struct Conta *conta, float valor) {
     printf("|*******************************************************|\n");
 	printf("|                                                       |\n");  
     printf("| Seu saque foi realizado com sucesso!                  |\n");
-    
-    } else {
-    	
+        } else {
     printf("| Seu saldo eh insuficiente!                            |\n");
     printf("|                                                       |\n");
    	printf("|*******************************************************|\n");

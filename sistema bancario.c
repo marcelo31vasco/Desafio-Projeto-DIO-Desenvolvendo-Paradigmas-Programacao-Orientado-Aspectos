@@ -29,8 +29,10 @@ void exibirExtrato(struct Conta *conta, const char *tipoConta) {
 	
 	printf("|*******************************************************|\n");
 	printf("|                                                       |\n");    
-    printf("| Extrato detalhado de sua da Conta %s: %.2f            |\n", tipoConta, conta->saldo); if (conta->saldo > 0) {
-    printf("| Saldo Positivo                                        |\n");} else {
+    printf("| Extrato detalhado de sua da Conta %s: %.2f            |\n", tipoConta, conta->saldo);
+	    if (conta->saldo > 0) {
+    printf("| Saldo Positivo                                        |\n");
+    } else {
     printf("| Sem saldo disponivel                                  |\n");
     printf("|                                                       |\n");
     printf("|*******************************************************|\n");
