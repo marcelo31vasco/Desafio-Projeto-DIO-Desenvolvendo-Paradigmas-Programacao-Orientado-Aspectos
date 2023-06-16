@@ -1,2 +1,4 @@
 # Desafio-Projeto-DIO-Desenvolvendo-Paradigmas-Programacao-Orientado-Aspectos
  FORMAÇÃO C/C++ DEVELOPER - Neste projeto temos como proposta a implementação de uma solução envolvendo o Paradigma de Programação Orientado a Aspectos. Para que isso seja possível, é aconselhável trabalhar com um paradigma de programação primário para o projeto principal, como por exemplo, o paradigma Orientado a Objetos.  A proposta envolve criar uma função transversal ao código sendo aplicada em diferentes chamadas, no entanto, todas para o mesmo objetivo.  Como exemplo de um projeto base, podemos utilizar como base, as funcionalidades de um sistema bancário.
+
+ ### *Observação importante! A formatação estar incorreta devido a bugs do VS Code ou do meu computador, mas no DevC++ a formatação e o programa se comportaram de maneira desejável.
